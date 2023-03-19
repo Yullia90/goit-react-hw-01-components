@@ -1,0 +1,62 @@
+.profile {
+  width: 250px;
+  height: 400px;
+  background-color: orange;
+  color: white;
+  padding-top: 10px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  border: 2px solid rgb(250, 81, 3);
+  cursor: pointer;
+}
+.avatar:hover {
+  box-shadow: 0 0 2px 1px rgba(95, 43, 1, 0.5);
+}
+
+.stats {
+  display: flex;
+  margin-top: 85px;
+  padding: 0;
+  height: 70px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 75px;
+  line-height: 100%;
+  padding-top: 15px;
+  border: 1px solid rgb(250, 81, 3);
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+.item:hover {
+  box-shadow: 0 0 2px 1px rgba(95, 43, 1, 0.5);
+}
+.label {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  height: 20px;
+}
+
+.quantity {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  height: 30px;
+}
