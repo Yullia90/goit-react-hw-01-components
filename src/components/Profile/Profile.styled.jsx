@@ -1,4 +1,6 @@
-.main {
+import styled from '@emotion/styled';
+
+export const Section = styled.section`
   background-color: orange;
   display: flex;
   flex-direction: column;
@@ -8,8 +10,9 @@
   box-shadow: 0 0 10px #3d2f26ed;
   border-radius: 10px;
   margin: 20px auto;
-}
-.profile {
+`;
+
+export const Card = styled.div`
   width: 250px;
   height: 400px;
   color: white;
@@ -20,9 +23,9 @@
   background-color: #7e6f7449;
   border-bottom: #7e6f7498 2px;
   box-shadow: 0 0 8px #300657ed;
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
   border-radius: 50%;
   width: 100px;
   display: block;
@@ -32,18 +35,17 @@
   cursor: pointer;
   border-bottom: #7e6f7498 2px;
   box-shadow: 0 0 8px #300657ed;
-}
-.avatar:hover {
-  box-shadow: 0 0 2px 1px rgba(95, 43, 1, 0.5);
-}
+   &:hover {
+  box-shadow: 0 0 2px 1px rgba(95, 43, 1, 0.5);`;
 
-.stats {
+export const Info = styled.ul`
   display: flex;
   margin-top: 82px;
   padding: 0;
   height: 70px;
-}
-.item {
+`;
+
+export const Item = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,20 +60,20 @@
   cursor: pointer;
   border-bottom: #7e6f7498 2px;
   box-shadow: 0 0 8px #300657ed;
-}
-.item:hover {
+  &:hover {
   box-shadow: 0 0 2px 1px rgba(95, 43, 1, 0.5);
-}
-.label {
+`;
+
+export const Label = styled.span`
   display: block;
   text-align: center;
   font-size: 14px;
   height: 20px;
-}
+`;
 
-.quantity {
+export const Quantity = styled.span`
   display: block;
   text-align: center;
   font-size: 16px;
   height: 30px;
-}
+`;
