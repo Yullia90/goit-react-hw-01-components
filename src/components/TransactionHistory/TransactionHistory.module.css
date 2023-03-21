@@ -1,0 +1,34 @@
+.main {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  width: 400px;
+  box-shadow: 0 0 10px #3d2f26ed;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 2px solid #7e6f7498;
+  background-color: #7e6f7449;
+  border-radius: 5p;
+}
+
+thead {
+  font-size: 18px;
+  color: white;
+  background-color: #813a0eed;
+}
+th,
+td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
