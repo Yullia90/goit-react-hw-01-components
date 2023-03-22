@@ -15,29 +15,28 @@ export const Section = styled.section`
 export const Table = styled.section`
   border-collapse: collapse;
   border-spacing: 0;
-  width: 100%;
   border: 2px solid #7e6f7498;
   background-color: #7e6f7449;
   border-radius: 5p;
 `;
 
-export const Tittle = styled.div`
+export const Tittle = styled.thead`
   font-size: 18px;
   color: white;
   background-color: #813a0eed;
 `;
 
-export const Tittlerow = styled.div`
+export const Tittlerow = styled.th`
   text-align: left;
   padding: 16px;
 `;
 
-export const Row = styled.div`
+export const Row = styled.td`
   text-align: left;
   padding: 16px;
 `;
-export const Item = styled.div`
-  &:nth-child(even) {
+export const Item = styled.tr`
+  :nth-child(even) {
     background-color: #f2f2f2;
   }
 `;

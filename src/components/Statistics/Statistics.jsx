@@ -17,26 +17,28 @@ function randColor() {
 export function Statistics({ title, stats }) {
   return (
     <Section>
-      <Title>
-        {title && <h2>{title}</h2>}
-
-        <Card>
-          {stats.map(({ id, label, percentage }) => {
-            return (
-              <Item key={id} style={{ backgroundColor: randColor() }}>
-                <Label>{label}</Label>
-                <Percentage>{percentage}%</Percentage>
-              </Item>
-            );
-          })}
-        </Card>
-      </Title>
+      <Title>{title && <h2>{title}</h2>}</Title>
+      <Card>
+        {stats.map(({ id, label, percentage }) => {
+          return (
+            <Item key={id} style={{ backgroundColor: randColor() }}>
+              <Label>{label}</Label>
+              <Percentage>{percentage}%</Percentage>
+            </Item>
+          );
+        })}
+      </Card>
     </Section>
   );
 }
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  // label: PropTypes.string.isRequired,
-  // percentage: PropTypes.number.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };

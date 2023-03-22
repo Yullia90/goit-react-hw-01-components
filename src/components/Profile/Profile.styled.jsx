@@ -35,7 +35,7 @@ export const Avatar = styled.img`
   cursor: pointer;
   border-bottom: #7e6f7498 2px;
   box-shadow: 0 0 8px #300657ed;
-   &:hover {
+  :hover {
   box-shadow: 0 0 2px 1px rgba(95, 43, 1, 0.5);`;
 
 export const Info = styled.ul`
